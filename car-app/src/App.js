@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 
 // importo componentes
@@ -13,7 +12,6 @@ class App extends Component {
         <header className="App-header">
           <Car model="toyota" marca="asdhe" color="red" patente="gdd 095"/>
         </header>
-        
       </div>
     );
   }
