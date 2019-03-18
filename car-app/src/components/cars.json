@@ -1,0 +1,28 @@
+{
+    "cars": [
+        {
+            "modelo": "TT",
+            "marca": "AUDI",
+            "color": "rojo",
+            "patente":"ac 005 dg" 
+        },
+        {
+            "modelo": "X2",
+            "marca": "BMW",
+            "color": "blanco",
+            "patente":"aj 836 fa" 
+        },
+        {
+            "modelo": "Camaro",
+            "marca": "CHEVROLET",
+            "color": "amarillo",
+            "patente":"az 354 kj" 
+        },
+        {
+            "modelo": "T8",
+            "marca": "AUDI",
+            "color": "verde",
+            "patente":"bf 324 kh" 
+        }
+    ]
+}

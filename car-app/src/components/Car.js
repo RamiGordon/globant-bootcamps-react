@@ -23,9 +23,13 @@ class Car extends Component {
                     <p style={style}><h3>Car Information</h3></p>
                 </div>
                 <div className="card-body">
-                    <CarInfo model={ this.props.model } marca={ this.props.marca } color={ this.props.color } patente={ this.props.patente } />
-                    {/* <button onClick={ this.handleButton }>buy</button> */}
-                    <CarActions carsi={ this.state.count } />
+                    <CarInfo 
+                        model={ this.props.modelo } 
+                        marca={ this.props.marca } 
+                        color={ this.props.color } 
+                        patente={ this.props.patente } 
+                    />
+                    <CarActions />
                 </div>
             </div>
         )

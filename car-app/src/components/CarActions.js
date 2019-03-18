@@ -1,4 +1,6 @@
 import  React, { Component } from 'react';
+import { Button, ButtonGroup, ButtonToolbar } from 'react-bootstrap-buttons';
+
 
 class CarActions extends Component {
     constructor() {
@@ -28,9 +30,8 @@ class CarActions extends Component {
         return(
             <>
                 <p><mark>You have { this.state.cars } cars</mark></p>
-                <button onClick={ this.handleButtonBuy }>buy</button>
-                <button onClick={ this.handleButtonSell }>sell</button>
-                
+                <Button  outline btnStyle="primary" onClick={ this.handleButtonBuy }>buy</Button> 
+                <Button  outline btnStyle="primary" onClick={ this.handleButtonSell }>sell</Button>                
             </>
         )
     }
