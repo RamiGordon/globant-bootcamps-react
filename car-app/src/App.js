@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './App.css';
-import ListCars from './components/ListCars';
 
 // importo componentes
+import ListCars from './components/ListCars';
 import Home from './components/Home';
 
 class App extends Component {
@@ -18,16 +18,15 @@ class App extends Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/ArrayCars">Cars</Link>
+                  <Link to="/vehicles">Cars</Link>
                 </li>
             </ul>
           </div>
           
           <div className="App container">
             <div className="col">
-              {/* no se como pasar props para car */}
               <Route exact path="/" component={Home}/>
-              <Route path="/ArrayCars" component={ListCars} />
+              <Route path="/vehicles" component={ListCars} />
             </div>
             
           </div>

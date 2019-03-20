@@ -25,6 +25,8 @@ class Home extends Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log('sending');
+        console.log(this.state);
+        this.props.history.push("./vehicles");
     }
 
     render() {
@@ -37,26 +39,26 @@ class Home extends Component {
                         <input 
                             type="text" 
                             name="name" 
-                            onChange={this.handleInput}
+                            onChange={this.handleInput} 
+                            required
                         />
                     </label>
                     <br/>
                     <label>
                         Money Amount:  
                         <input 
-                            type="text" 
-                            name="amount"
-                            onChange={this.handleInput}
+                            type="number" 
+                            name="amount" 
+                            min="0" 
+                            onChange={this.handleInput} 
+                            required
                         />
                     </label>
                     <br/>
                     <label>
-                        You have vehicle?  
-                        <input 
-                        type="text" 
-                        name="vehicle"
-                        onChange={this.handleInput}
-                    />
+                        Do you have vehicles?:  
+                        yes <input type="radio" name="vehicle" value="yes" onChange={this.handleInput} />
+                        no <input type="radio" name="vehicle" value="no" onChange={this.handleInput} />
                     </label>
                     <br/>
                     <input type="submit" value ="Submit" />

@@ -15,7 +15,12 @@ class ListCars extends Component {
         const list = this.state.cars.map((car, i) => {
             return(
                 <div className="col-md-4" key={i}>
-                    <Car model={ car.modelo } marca={ car.marca } color={ car.color } patente={ car.patente }/>
+                    <Car 
+                        model={ car.modelo } 
+                        marca={ car.marca } 
+                        color={ car.color } 
+                        patente={ car.patente }
+                    />
                 </div>
             )
         })
