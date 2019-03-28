@@ -5,17 +5,6 @@ import { connect } from 'react-redux';
 import buy from '../redux/actions/buy';
 
 class ListCars extends Component {
-    constructor() {
-        super();
-
-        // this.state= {
-        //     cars 
-        // }
-    }
-    
-    handleBuy = (id) => {
-        this.props.buy(id);
-    }
 
     render() {
         const { state } = this.props;
@@ -24,7 +13,6 @@ class ListCars extends Component {
             return(
                 <div className="col-md-4" key={i}>
                     <Car 
-                        handleBuy={ this.handleBuy }
                         car= { car }
                     />
                 </div>
@@ -56,8 +44,4 @@ const mapStateToProps = (state) => {
     };
 };
 
-const mapDispatchToProps = {
-    buy,
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ListCars);
+export default connect(mapStateToProps)(ListCars);
