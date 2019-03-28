@@ -1,5 +1,9 @@
 import  React, { Component } from 'react';
 import { Button, ButtonGroup, ButtonToolbar } from 'react-bootstrap';
+// import { connect } from 'react-redux';
+// import buy from '../redux/actions/buy';
+// import store from '../redux/store';
+
 
 
 class CarActions extends Component {
@@ -13,7 +17,9 @@ class CarActions extends Component {
     
     handleButtonBuy = () => {
         let aux = this.state.cars + 1;
-        this.setState({cars: aux})
+        this.setState({cars: aux});
+        // console.log(this.props.car.id);
+        // this.props.handleBuy(this.props.car.id);
     }
 
     handleButtonSell = () => {
@@ -27,6 +33,9 @@ class CarActions extends Component {
     }
 
     render() {
+        // const { state } = this.props;
+        // console.log(state);
+        console.log(this.props.car.count);
         return(
             <>
                 <p><mark>You have { this.state.cars } cars</mark></p>
@@ -36,5 +45,20 @@ class CarActions extends Component {
         )
     }
 }
+
+// const mapStateToProps = (state) => {
+//     return {
+//         state
+//     };
+// };
+
+// const mapDispatchToProps = {
+//     buy,
+// }
+
+// esto es para entender la logica
+// const wrapper = connect(mapStateToProps);
+// const component = wrapper(CarActions);
+// export default component;
 
 export default CarActions;

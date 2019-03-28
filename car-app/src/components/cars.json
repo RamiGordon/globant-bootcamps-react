@@ -1,28 +1,36 @@
 {
     "cars": [
         {
+            "id": 1,
             "modelo": "TT",
             "marca": "AUDI",
             "color": "rojo",
-            "patente":"ac 005 dg" 
+            "patente":"ac 005 dg",
+            "count": 0
         },
         {
+            "id": 2,
             "modelo": "X2",
             "marca": "BMW",
             "color": "blanco",
-            "patente":"aj 836 fa" 
+            "patente":"aj 836 fa" ,
+            "count": 0
         },
         {
+            "id": 3,
             "modelo": "Camaro",
             "marca": "CHEVROLET",
             "color": "amarillo",
-            "patente":"az 354 kj" 
+            "patente":"az 354 kj" ,
+            "count": 0
         },
         {
+            "id": 4,
             "modelo": "T8",
             "marca": "AUDI",
             "color": "verde",
-            "patente":"bf 324 kh" 
+            "patente":"bf 324 kh" ,
+            "count": 0
         }
     ]
 }

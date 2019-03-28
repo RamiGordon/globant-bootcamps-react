@@ -24,12 +24,9 @@ class Car extends Component {
                 </div>
                 <div className="card-body">
                     <CarInfo 
-                        model={ this.props.model } 
-                        marca={ this.props.marca } 
-                        color={ this.props.color } 
-                        patente={ this.props.patente } 
+                        car = { this.props.car }
                     />
-                    <CarActions />
+                    <CarActions  handleBuy={this.props.handleBuy} car = { this.props.car }/>
                 </div>
             </div>
         )
